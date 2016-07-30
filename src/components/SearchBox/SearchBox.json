@@ -1,19 +1,26 @@
 {
   "name": "SearchBox",
-  "notes": "",
-  "template": "SearchBox.html",
-  "class": "ms-SearchBox",
-  "dependencies": [
-    "Label"
-  ],
-  "branches": [
-      {
-        "name": "Enabled",
-        "default": true
-      },
-      {
-        "name": "Disabled",
-        "class": "is-disabled"
+  "props": {
+    "label": "Search",
+    "defaultValue": "",
+    "icon": "search",
+    "clearButton": {
+      "component": "CommandButton",
+      "props": {
+        "icon": "x",
+        "modifier": "noLabel",
+        "tag": "button",
+        "customClasses": "ms-SearchBox-close"
       }
-  ]
+    },
+    "filterButton": {
+      "component": "CommandButton",
+      "props": {
+        "icon": "Filter",
+        "modifier": "noLabel",
+        "tag": "button",
+        "customClasses": "ms-SearchBox-filter"
+      }
+    }
+  }
 }

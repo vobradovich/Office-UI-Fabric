@@ -1,6 +1,3 @@
 {
-  "name": "Spinner",
-  "notes": "An animating activity indicator.",
-  "template": "Spinner.html",
-  "class": "ms-Spinner"
+  "name": "Spinner"
 }
